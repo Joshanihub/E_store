@@ -6,10 +6,82 @@
     <title>E_store</title>
     <link rel="stylesheet" href="E_store.css">
     <link rel="stylesheet" href="E_store_mediaqueries.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
- <header class="header"></header>
+<!-- Start of header -->
+ <header>
+
+    <nav class="navbar" id="navbar">
+            <div class="logo" >
+                <a href="E_store.html">
+                    <img id="light_theme" class="light-img" src="/Img/Logo Light.png" alt="Aj street wear logo for light mode">
+                    <!-- <img id="dark_theme"  src="/Img/Logo Dark.png" alt="Aj street wear logo for dark mode"> -->
+                </a>
+                
+            </div>
+
+                    <div class="links-container">
+                            <ul class="links">
+                                <li ><a class="nav_links" href="E_store_product.html">Products</a></li>
+                                <li ><a class="nav_links" href="E_store_about.html">About Us</a></li>
+                                <li ><a class="nav_links" href="E_store_contact.html">Contact Us</a></li>
+
+                                <div class="dropdown">
+                                    
+                                        <button class="dropbtn">Categories</button><i class='bx bx-chevron-down dropdown-icon'></i>
+                                        
+                                    <div class="dropdown-menu">
+                                        
+                                        <a href="E_store_men.html">Men's Wear</a>
+                                        <a href="E_store.women.html">Women's Wear</a>
+                                        <a href="E_store.children.html">Children's Wear</a>
+                                        <a href="E_store.accesories.html">Accessories</a>
+                                    </div>
+
+                                </div>
+                                
+                            </ul>
+                    </div>
+
+                    <div class="search">
+                            
+                            <div class="search-container">
+                                <label for="search"></label>
+                                <input id="search" class="search-input" type="text" placeholder="Search Products">
+                                <i class='bx bx-search search-icon'></i>
+                            </div>
+                            
+                    </div>
+                    
+                    
+
+                    <div class="cart-btn">  
+                        <a class="cart" href="E_store_cart.html">
+                            <i class='bx bx-cart cart-icon'></i>
+                            <i style="display: none;" class='bx bxs-cart cart-icon' ></i>
+                        </a>
+
+                        
+                        
+                    </div>
+
+
+                    <div class="dark-theme">
+                                <!-- <i class='bx bx-moon moon-icon theme-icons'></i> -->
+                                <i class='bx bx-sun sun-icon theme-icons'></i>
+                    </div>
+                    
+        
+
+    </nav>
+ </header> 
     
+<!-- End of header -->
+
+
+
 
     <script src="E_store.js"></script>
 </body>
