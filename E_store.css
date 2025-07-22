@@ -162,7 +162,7 @@ body{
 /* Start of header  */
 
 .navbar{
-    display: none;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -726,3 +726,79 @@ body{
     display: flex;
 }
 /*End of Testimonials */
+
+/* Footer */
+.footer-secction{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+}
+.footer-top{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    border: 1px solid black;
+    background: #9B9B9B;
+    padding: 4rem;
+    text-wrap: wrap;
+    flex-wrap: wrap;
+}
+.footer-newsletter{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--margin-1);
+    align-items: start;
+    /* border: 1px solid black; */
+}
+.footer-img{
+    width: 100px;
+    scale: .8;
+    border-radius: var(--border-radius-4);
+
+
+}
+.input-news{
+    margin: 2rem;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-1);
+}
+.footer-links ul li{
+    margin-bottom: var(--margin-1);
+    list-style: none;
+  
+}
+.footer-links ul li a{
+    text-decoration: none;
+    color: var(--primary-font-color); 
+    transition: ease-in-out var(--transition-1);
+}
+.footer-links ul li a:hover{
+    text-decoration: underline;
+}
+.footer-links ul li a i{
+   scale: 1.5;
+   margin-right: var(--margin-2);
+}   
+.footer-bottom{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    
+}
+.footer-bottom-links a{
+  text-decoration: none;
+  margin-left: var(--margin-1);
+  color: var(--primary-font-color);
+}
+/*End of Footer */
