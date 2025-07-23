@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+
+}
+:root{
+    --primary-sign-in-bg-color:#3B3B3B;
+    --primary-sign-in-font-color:#F5F5F5;
+    --font-size-1:1rem;
+    --input-font-weight:400;
+    --input-font-size:1.4rem;
+    --border-radius-2:.5rem;
+    --padding-btn:.5rem
+
+}
+.sign-in-section{
+    width: 100%;
+    height: 100vh;
+    background: url(Img/branddark.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.sign-in-container,
+.sign-in-section,
+.sign-in-content{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.sign-in-container,
+.sign-in-content{
+    border-radius: 1rem;
+    
+}
+.sign-in-container{
+    width: 60%;
+    transition: var(--transition-2);
+    backdrop-filter: blur(10px);
+    
+}
+.sign-in-container:hover{
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 40px rgba(116, 116, 116, 0.5);
+}
+.sign-in-content{
+    padding: 4rem;
+    width: 800px;
+    height: 70vh;
+    padding: 4rem;
+    margin: 2rem;
+     
+    
+}
+.sign-in-img{
+    width: 80px;
+    background-size: cover;
+    transition: ease-in-out var(--transition-2);
+}
+.sign-in-img:hover{
+    transform: scale(1.1);
+}
+.sign-in-content{
+    flex-direction: column;
+}
+.sign-in-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    padding: .5rem;
+
+}
+.sign-in-title{
+    color: var(--secondary-font-color);
+    font-size: var(--page-title-title);
+    font-weight: var(--font-weight-7);
+
+
+}
+
+.sign-in-inputs{
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
+    margin-bottom: .5rem;
+    
+}
+.label-inputs{
+    font-size: var(--input-font-size);
+    color: var(--primary-sign-in-font-color);
+}
+.inputs{
+    width: 350px;
+    padding: .5rem;
+    border-radius: var(--border-radius-2) ;
+    border: none;
+    background: #F5F5F5;
+    font-size: 1rem;
+}
+.sign-in-link{
+   display: flex;
+   margin-left: 12rem;
+   gap: var(--gap-1);
+}
+.sign-in-forgot{
+    text-decoration: none;
+    color: var(--secondary-font-color);
+    font-weight: var(--font-weight-7);
+}
+.sign-in-footer{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-2);
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-btn);
+}
+.sign-in-footer p{
+    font-size: 20px;
+    color: var(--primary-sign-in-font-color);
+}
+.btn-sign-in{
+    padding: var(--padding-btn) 2rem;
+    color: var(--primary-sign-in-bg-color);
+    background: var(--primary-sign-in-font-color) ;
+    font-size: var(--font-size-1);
+    border-radius: var(--border-radius-2);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: ease-in-out var(--transition-2);
+    
+}
+.btn-sign-in:hover{
+    scale: .9;
+    background: #838383;
+    color: var(--primary-sign-in-bg-color);
+}
+.ico{
+    scale: 1.5;
+    color: #F5F5F5;
+  
+}
+.sign-in-icons{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+   
+}
+.sign-in-reg{
+    display: flex;
+}
+.sign-in-footer a{
+    cursor: pointer;
+}
+.sign-in-register{
+    font-size: 1.4rem;
+    color: var(--primary-sign-in-font-color);
+}
+.footer-link{
+    text-decoration: none;
+    color: #838383;
+    font-weight: bold;
+}
