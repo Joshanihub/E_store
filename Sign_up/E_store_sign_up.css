@@ -7,8 +7,8 @@
 
 }
 :root{
-    --primary-sign-in-bg-color:#3B3B3B;
-    --primary-sign-in-font-color:#F5F5F5;
+    --primary-sign-up-bg-color:#3B3B3B;
+    --primary-sign-up-font-color:#F5F5F5;
     --font-size-1:1rem;
     --input-font-weight:400;
     --input-font-size:1.4rem;
@@ -16,37 +16,37 @@
     --padding-btn:.5rem
 
 }
-.sign-in-section{
+.sign-up-section{
     width: 100%;
     height: 100vh;
-    background: url(Img/branddark.jpeg);
+    background: url(/Img/branddark.jpeg);
     background-position: center;
     background-size: cover;
 }
-.sign-in-container,
-.sign-in-section,
-.sign-in-content{
+.sign-up-container,
+.sign-up-section,
+.sign-up-content{
     justify-content: center;
     display: flex;
     align-items: center;
 }
 
-.sign-in-container,
-.sign-in-content{
+.sign-up-container,
+.sign-up-content{
     border-radius: 1rem;
     
 }
-.sign-in-container{
+.sign-up-container{
     width: 60%;
     transition: var(--transition-2);
     backdrop-filter: blur(10px);
     
 }
-.sign-in-container:hover{
+.sign-up-container:hover{
     backdrop-filter: blur(10px);
     box-shadow: 0px 0px 40px rgba(116, 116, 116, 0.5);
 }
-.sign-in-content{
+.sign-up-content{
     padding: 4rem;
     width: 800px;
     height: 70vh;
@@ -55,18 +55,18 @@
      
     
 }
-.sign-in-img{
+.sign-up-img{
     width: 80px;
     background-size: cover;
     transition: ease-in-out var(--transition-2);
 }
-.sign-in-img:hover{
+.sign-up-img:hover{
     transform: scale(1.1);
 }
-.sign-in-content{
+.sign-up-content{
     flex-direction: column;
 }
-.sign-in-header{
+.sign-up-header{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,7 +74,7 @@
     padding: .5rem;
 
 }
-.sign-in-title{
+.sign-up-title{
     color: var(--secondary-font-color);
     font-size: var(--page-title-title);
     font-weight: var(--font-weight-7);
@@ -82,7 +82,7 @@
 
 }
 
-.sign-in-inputs{
+.sign-up-inputs{
     display: flex;
     flex-direction: column;
     gap:.5rem;
@@ -91,7 +91,7 @@
 }
 .label-inputs{
     font-size: var(--input-font-size);
-    color: var(--primary-sign-in-font-color);
+    color: var(--primary-sign-up-font-color);
 }
 .inputs{
     width: 350px;
@@ -101,17 +101,17 @@
     background: #F5F5F5;
     font-size: 1rem;
 }
-.sign-in-link{
+.sign-up-link{
    display: flex;
    margin-left: 12rem;
    gap: var(--gap-1);
 }
-.sign-in-forgot{
+.sign-up-forgot{
     text-decoration: none;
     color: var(--secondary-font-color);
     font-weight: var(--font-weight-7);
 }
-.sign-in-footer{
+.sign-up-footer{
     display: flex;
     flex-direction: column;
     gap: var(--gap-2);
@@ -120,14 +120,14 @@
     justify-content: center;
     padding: var(--padding-btn);
 }
-.sign-in-footer p{
+.sign-up-footer p{
     font-size: 20px;
-    color: var(--primary-sign-in-font-color);
+    color: var(--primary-sign-up-font-color);
 }
-.btn-sign-in{
+.btn-sign-up{
     padding: var(--padding-btn) 2rem;
-    color: var(--primary-sign-in-bg-color);
-    background: var(--primary-sign-in-font-color) ;
+    color: var(--primary-sign-up-bg-color);
+    background: var(--primary-sign-up-font-color) ;
     font-size: var(--font-size-1);
     border-radius: var(--border-radius-2);
     font-weight: bold;
@@ -136,32 +136,32 @@
     transition: ease-in-out var(--transition-2);
     
 }
-.btn-sign-in:hover{
+.btn-sign-up:hover{
     scale: .9;
     background: #838383;
-    color: var(--primary-sign-in-bg-color);
+    color: var(--primary-sign-up-bg-color);
 }
 .ico{
     scale: 1.5;
     color: #F5F5F5;
   
 }
-.sign-in-icons{
+.sign-up-icons{
     display: flex;
     gap: 2rem;
     align-items: center;
     justify-content: center;
    
 }
-.sign-in-reg{
+.sign-up-reg{
     display: flex;
 }
-.sign-in-footer a{
+.sign-up-footer a{
     cursor: pointer;
 }
-.sign-in-register{
+.sign-up-register{
     font-size: 1.4rem;
-    color: var(--primary-sign-in-font-color);
+    color: var(--primary-sign-up-font-color);
 }
 .footer-link{
     text-decoration: none;

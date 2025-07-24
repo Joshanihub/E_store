@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family:"Titillium Web", sans-serif;
+    scroll-behavior: smooth;
+    
+
+    
+}
+/* For WebKit browsers */
+::-webkit-scrollbar {
+  width: 10px;
+  
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(64, 122, 100, 0.562);
+  border-radius: 2px;
+  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+:root{
+    /* Colors */
+    --primary-bg-color:#9B9B9B;
+    --primary-font-color:#000000;
+    --secondary-font-color:#A4A4A4;
+    --secondary-bg-color:#000000;
+    --btn-color:#1E2C2E;
+    --btn-text-color:#FFFFFF;
+    --btn-hover-color:#FFFFFF;
+    --btn-hover--text-color:#1E2C2E;
+    
+
+    
+
+    /* Fonts sizes*/
+    --page-title-title:2.5rem;
+    --section-title:2rem;
+    --sub-section-title:1.5rem;
+    --product-features:1.2rem;
+    --label-size:1rem;
+
+
+    /* Font weight */
+    --font-weight-1:100;
+    --font-weight-2:200;
+    --font-weight-3:300;
+    --font-weight-4:400;
+    --font-weight-5:500;
+    --font-weight-6:600;
+    --font-weight-7:700;
+    --font-weight-8:800;
+    --font-weight-9:900;
+
+    /* Text-size */
+    --larger-font-size:2rem;
+    --default-font-size:1.2rem;
+    --btn-font-size:1rem;
+    --section-font-size:1.5rem;
+    --secondary-font-size:0.8rem;
+
+    /* Line-height */
+    --default-line-height:1.5rem;
+    --secondary-line-height:1.2rem;
+
+    /* Z-index */
+    --z-index-1:1;
+    --z-index-2:2;
+    --z-index-3:3;
+    --z-index-4:4;
+    --z-index-5:5;
+
+    /* Border */
+    --border-1:1px solid var(--primary-bg-color);
+    --border-2:1px solid var(--secondary-bg-color);
+    --border-3:1px solid var(--btn-color);
+    --border-4:1px solid var(--btn-text-color);
+    --border-5:1px solid var(--btn-hover-color);
+    --border-6:1px solid var(--btn-hover--text-color);
+    /* Border-radius */
+
+    --border-radius-1:1rem;
+    --border-radius-2:0.5rem;
+    --border-radius-3:0.2rem;
+    --border-radius-4:0.1rem;
+    --border-radius-5:0.05rem;
+    /* Padding */
+
+    --padding-1:1rem;
+    --padding-2:0.5rem;
+    --padding-3:0.2rem;
+    --padding-4:0.1rem;
+    --padding-5:0.05rem;
+    /* Margin */
+
+    --margin-1:1rem;
+    --margin-2:0.5rem;
+    --margin-3:0.2rem;
+    --margin-4:0.1rem;
+    --margin-5:0.05rem;
+    /* Gap */
+
+    --gap-1:1rem;
+    --gap-2:0.5rem;
+    --gap-3:0.2rem;
+    --gap-4:0.1rem;
+    --gap-5:0.05rem;
+
+    /* Transitions */
+
+    --transition-1:0.5s;
+    --transition-2:0.3s;
+    --transition-3:0.2s;
+    --transition-4:0.1s;
+    --transition-5:0.05s;
+    /* Box-shadow */
+
+    --box-shadow-1:0px 4px 4px rgba(0, 0, 0, 0.25);
+    --box-shadow-2:0px 4px 4px rgba(0, 0, 0, 0.25);
+    --box-shadow-3:0px 4px 4px rgba(0, 0, 0, 0.25);
+    --box-shadow-4:0px 4px 4px rgba(0, 0, 0, 0.25);
+    --box-shadow-5:0px 4px 4px rgba(0, 0, 0, 0.25);
+    --box-shadow-6: 0px 4px 4px rgba(149, 180, 168, 0.562);
+
+    /* line-height */
+    --line-height-1:1.5;
+    --line-height-2:1.2; 
+    --line-height-3:1.1;
+    --line-height-4:1.05;
+    --line-height-5:1.01;
+
+    /* Spacing */
+    --spacing-0:1rem;
+    --spacing-1:0.5rem;
+    --spacing-2:0.3rem;
+    --spacing-3:0.2rem;
+    --spacing-4:0.1rem;
+    --spacing-5:0.05rem;
+
+    
+}
+body{
+    background: #FEFFFF;
+    overflow-x: hidden; /* Hides horizontal scrollbar */
+   
+}
+
+/* Start of header  */
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: var(--padding-5);
+    width: 100%;
+    background: var(--primary-bg-color);
+    box-shadow: var(--box-shadow-6);
+    position: fixed;
+    z-index: var(--z-index-5);
+    
+    
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+    width: 4%;
+    margin-left: 1.75rem;
+    padding: var(--padding-2);
+}
+.light-img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transition: var(--transition-1);
+}
+.light-img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: ease var(--transition-1);
+}
+
+.links{
+    display: flex;
+    gap: var(--gap-1);
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+ 
+    
+}
+
+.nav_links{
+    text-decoration: none;
+    font-size: var(--default-font-size);
+    color: var(--primary-font-color);
+    transition: var(--transition-1);
+    font-weight: var(--font-weight-6);
+    margin-left: var(--margin-1);
+    
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+    transition: ease var(--transition-1);
+}
+
+
+.dropbtn {
+    background: var(--btn-color);
+    color: var(--btn-text-color);
+    padding: var(--padding-2);
+    border-radius: var(--border-radius-2);
+    border: none;
+    margin-right: var(--margin-2);
+    font-size: var(--btn-font-size);
+    cursor: pointer;
+    display: inline-block;
+}
+.dropdown-icon{
+    color: black;
+    scale: 1.5;
+    
+  
+}
+.dropdown-menu {
+    min-width: 160px;
+    display: none;
+    position: absolute;
+    z-index: var(--z-index-1);
+    box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2);
+    color: var(--btn-text-color);
+    border-radius: var(--border-radius-2);
+    background: var(--btn-hover-color);
+    
+    
+}
+
+.dropdown-menu a {
+    cursor: pointer;
+     display: block;    
+    font-size: var(--default-font-size);
+    color: var(--primary-font-color);
+    padding: var(--padding-2);
+    text-decoration: none; 
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--primary-bg-color);
+    
+}
+
+
+/* Show dropdown menu when button is hovered */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    
+}
+
+.search{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-2);
+    padding: var(--padding-2);
+}
+
+.search-input{
+    
+    padding: var(--padding-3);
+    width: 300px;
+    max-width: 20rem;
+    border-radius: var(--border-radius-3);
+    border: 1px solid var(--primary-font-color);
+    border: none;
+    padding: var(--padding-2);
+    margin-right: var(--margin-1);
+    color: var(--primary-font-color);
+    font-size: var(--default-font-size);
+    
+    
+}
+.search-icon{
+    background: transparent;
+    text-align: center;
+    outline: #1E2C2E;
+    border: none;
+    cursor: pointer;
+    scale: 1.5;
+}
+.cart{
+    
+    color: var(--primary-font-color);
+}
+
+.cart-btn{
+    gap: 2rem;
+    
+}
+    
+
+.cart-icon{
+    scale: 2;
+    cursor: pointer;
+}
+
+.dark-theme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-1);
+    cursor: pointer;
+}
+.theme-icons{
+    scale:1.7;
+    cursor: pointer;
+}
+
+#userName{
+    color: black;
+}
+/* End of header */
+
+/* Start of main */
+ /* End of main */
